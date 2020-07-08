@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>
+	TP-Final Prof. Atanasov Salle: 06 
+	"DORANCO - ÉCOLE SUPÉRIEURE DES TECHNOLOGIES CRÉATIVES &amp; organisme de formation"
+</title>
+</head>
+
+<body>
+<h2>JavaScript - qui affiche seulement les nombres pairs du 1 et 10</h2>
+
+<p id="pair"></p>
+
+<script>
+var nums = "";
+var i;
+for (i = 1; i <= 10; i++){
+	if (i%2 == 0){
+    	nums += i + " ";
+    }
+}
+document.getElementById("pair").innerHTML = "Les nombres pairs sont: " + nums;
+</script>
+
+<h2>JavaScript - qui affiche les nombres impairs entre 20 et 30</h2>
+<p id="impair"></p>
+
+<script>
+var nums = "";
+var i;
+for (i = 20; i <= 30; i++){
+	if (i%2 != 0){
+    	nums += i + " ";
+    }
+}
+document.getElementById("impair").innerHTML = "Les nombres pairs sont: " + nums;
+</script>
+
+<h2>JavaScript - qui affiche les nombres entre 15 et 30 et qui sont divisible par 2</h2>
+
+<p id="div2"></p>
+
+<script>
+var nums = "";
+var i;
+for (i = 15; i <= 30; i++){
+	if (i%2 == 0){
+    	nums += i + " ";
+    }
+}
+document.getElementById("div2").innerHTML = "Les nombres pairs sont: " + nums;
+</script>
+
+<h2>JavaScript - qui affiche tous les nombres du 5 et 15 sois pair sois impairs.</h2>
+
+<p id="pair&impair"></p>
+
+<script>
+var nums = " ";
+var i;
+for (i = 5; i <= 15; i++){
+	if (i%2 == 0){
+    	nums += i + " » C'est un nombre pair." + "<br>";
+    }
+    else{
+    	nums += i + " » C'est un nombre impair." + "<br>";
+    }
+}
+document.getElementById("pair&impair").innerHTML = "Les nombres pairs sont: <br><br>" + nums;
+</script>
+</body>
+</html>
