@@ -1,0 +1,208 @@
+NB.: Tous les TP-1 [mardi 7 juil. 02:57] et TP-2 [mardi 7 juil. 03:18) avaient été envoyés hier.
+ 
+
+TP-1
+Dated: 06 Juillet 2020
+
+Réponse à la Q-1 (TP-1):
+
+Il existe 8 types de données de base en JavaScript. 5 d'entre eux, y compris la concaténation, sont écrits dans les paragraphes suivants - selon la question:
+
+1. Nombre pour les nombres de toute nature: entier ou virgule flottante, les entiers sont limités par ± 253.
+
+[En JavaScript, le type "nombre" ne peut pas représenter des valeurs entières supérieures à (253-1) (c'est-à-dire 9007199254740991), ou inférieures à - (- 253-1) pour les négatifs. C’est une limitation technique due à leur représentation interne.]
+
+2. Bigint est pour les nombres entiers de longueur arbitraire.
+3. String for string types. Une string peut avoir zéro ou plusieurs caractères, il n'y a pas de type distinct à un seul caractère.
+4. Boolean pour vrai / faux.
+5. Null pour les valeurs inconnues - un type autonome qui a une seule valeur null.
+6. Undefined (non défini) pour les valeurs non affectées - un type autonome qui a une seule valeur non définie.
+7. Objet pour des structures de données plus complexes.
+8. Symbole pour les identifiants uniques.
+
+
+Example:
+
+Integer: var a = 5, b = 10;
+	 var x = 10, y = 20;
+	 
+Float:
+	 var pi = 3.141
+	 var sigma = 10.44
+	 
+Boolean:
+	 var x = 1;
+	 var y = 2;
+	 console.log(a>b)
+	 console.log(a<b)
+	 console.log(a==b)
+	 
+String:
+	 var name = "Kumar";
+	 alert( 'Hello, ${name}!' ); //Hello Kumar!
+	 
+
+Concatenation:
+	 var NomPrenom = 'Mickey'+' '+'Mouse'
+
+
+
+var x=10, y=20;
+undefined
+x
+10
+y
+20
+alert("The variables are: " + x + " " + "&" + " " +y);
+undefined
+var pi=3.141;
+undefined
+pi
+3.141
+alert("The valur of the pi is: " + pi);
+undefined
+var x=10, y=20;
+var x=10, y=20;
+undefined
+undefined
+console.log(x>y);
+VM3017:1 false
+undefined
+console.log(x<y);
+VM3052:1 true
+undefined
+console.log(x==y);
+VM3093:1 false
+undefined
+let name="Kumar";
+undefined
+alert("Hello" + " " + name);
+undefined
+var UserName = prompt("What is your Name");
+undefined
+alert("Hello Mr. " + " " + UserName +"!");
+undefined
+var Nom="MONDAL", PreNom="Utpoul Kumar";
+undefined
+alert("This is Mr.  " + " " + Nom +" " + PreNom);
+undefined
+
+
+Réponse à la Q tous les restes
+[SCREENSHOTS]
+
+..............................................................................................................................
+
+NB.: Tous les TP-1 [mardi 7 juil. 02:57] et TP-2 [mardi 7 juil. 03:18) avaient été envoyés hier.
+
+TP-2
+Dated 06 Juillet 2020
+
+
+Réponse à la Q-1: Veuillez voir la capture d'écran.
+
+Réponse à la Q-2: Veuillez voir la capture d'écran.
+
+Réponse à la Q-3: Veuillez voir la capture d'écran.
+
+Réponse à la Q-4: Veuillez voir la capture d'écran.
+
+
+TP-07 Juillet 2020
+Method-1
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript For Loop</h2>
+
+<p id="HelloWorld"></p>
+
+<script>
+var text = " ";
+//var i;
+for (i = 1; i <= 10; i++) {
+  text += " Hello World! Counting " + i + "<br>";
+}
+document.getElementById("HelloWorld").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+
+Method-2
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="HelloWorld"></p>
+
+<p><strong>Note:</strong> La méthode repeat () n'est pas prise en charge dans IE 11 (et les versions antérieures).</p>
+
+<script>
+
+  var text = "Hello world!";
+  var i;
+  i = "<br>" + text;
+  document.getElementById("HelloWorld").innerHTML = i.repeat(10);
+
+</script>
+
+</body>
+</html>
+
+
+Method-3
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Cliquez sur le bouton pour afficher "Hello World!" pour 10 fois.</p>
+<button onclick="myFunction()">Afficher le résultat</button>
+
+<p id="HelloWorld"></p>
+
+<p><strong>Note:</strong> La méthode repeat () n'est pas prise en charge dans IE 11 (et les versions antérieures).</p>
+
+<script>
+function myFunction(){
+  var text = "Hello world!";
+  var i;
+  i = "<br>" + text;
+  document.getElementById("HelloWorld").innerHTML = i.repeat(10);
+}
+</script>
+
+</body>
+</html>
+
+
+Method-4
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Cliquez sur le bouton pour afficher "Hello World!" pour 10 fois.</p>
+
+<button onclick="window.print(myFunction())">Print this page</button>
+
+<p id="HelloWorld"></p>
+
+<p><strong>Note:</strong> La méthode repeat () n'est pas prise en charge dans IE 11 (et les versions antérieures).</p>
+
+<script>
+function myFunction(){
+  var text = "Hello world!";
+  var i;
+  i = "<br>" + text;
+  document.getElementById("HelloWorld").innerHTML = i.repeat(10);
+}
+</script>
+
+</body>
+</html>
